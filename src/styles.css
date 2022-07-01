@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  font-family: sans-serif;
+}
+
+.conteudo {
+  width: 80%;
+}
+
+.tarefa_box {
+  display: flex;
+  flex-direction: column;
+}
