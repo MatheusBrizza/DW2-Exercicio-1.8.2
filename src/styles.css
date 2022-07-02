@@ -11,7 +11,26 @@
   width: 80%;
 }
 
+.btn_adicionar {
+  padding: 10px;
+  background-color: transparent;
+  border: 0.5px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_adicionar:hover {
+  color: white;
+  background-color: blue;
+}
+
 .tarefa_box {
   display: flex;
   flex-direction: column;
+}
+
+#tarefa {
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 0 10px;
 }

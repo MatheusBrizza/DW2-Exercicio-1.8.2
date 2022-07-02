@@ -18,10 +18,11 @@ export default function App() {
                 }}
               >
                 <input id="tarefa" name="tarefa" placeholder="minha tarefa" />
-                <button>Adicionar</button>
+                <button className="btn_adicionar">Adicionar</button>
               </div>
             </div>
           </form>
+          <section>ul>li*4</section>
         </div>
       </div>
     </div>
