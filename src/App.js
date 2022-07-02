@@ -18,11 +18,21 @@ export default function App() {
                 }}
               >
                 <input id="tarefa" name="tarefa" placeholder="minha tarefa" />
-                <button className="btn_adicionar">Adicionar</button>
+                <button className="btn btn_adicionar">Adicionar</button>
               </div>
             </div>
           </form>
-          <section>ul>li*4</section>
+          <section>
+            <ul>
+              <li>
+                <input className="tarefa_conteudo" value={"conteudo"} />
+                <button className="btn btn_excluir">Excluir</button>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </section>
         </div>
       </div>
     </div>
