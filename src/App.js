@@ -16,6 +16,13 @@ export default function App() {
     setInputTarefa("");
   };
 
+  const handleOnClick = (index) => {
+    console.log(index);
+    setTarefas(
+      tarefas.filter((tarefa, indexOriginal) => indexOriginal !== index)
+    );
+  };
+
   return (
     <div className="container">
       <div className="conteudo">
@@ -48,10 +55,15 @@ export default function App() {
           </form>
           <section>
             <ul>
-              {tarefas.map((tarefa) => (
+              {tarefas.map((tarefa, index) => (
                 <li>
                   <input className="tarefa_conteudo" disabled value={tarefa} />
-                  <button className="btn btn_excluir">Excluir</button>
+                  <button
+                    className="btn btn_excluir"
+                    onClick={() => handleOnClick(index)}
+                  >
+                    Excluir
+                  </button>
                 </li>
               ))}
             </ul>
